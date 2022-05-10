@@ -26,14 +26,14 @@
 
 
 **💡 Algorithme 2 : Principal Component Analysis using scikit-learn**: 
-- PCA projects observations onto the (hopefully fewer) principal components of the feature matrix that retain the most variance. PCA can also be used in the scenario, where we need features to be retained that share maximum variance. PCA is implemented in scikit-learn using the PCA method:
+- L'algorithme PCA projette des observations sur les composants principaux de la matrice de caractéristiques qui conservent le plus de variance. PCA peut également être utilisée dans le scénario, où nous avons besoin de conserver des fonctionnalités qui partagent une variance maximale. PCA est implémenté dans scikit-learn en utilisant la méthode PCA :
 
       class sklearn.decomposition.PCA(n_components=None, *, copy=True, whiten=False, svd_solver='auto', tol=0.0, iterated_power='auto', random_state=None)
 
-- n_components has two operations, depending on the argument provided. If the argument is greater than 1,n_components will return that many features. If the argument to n_components is between 0 and 1, PCA returns the minimum amount of features that retain that much variance. It is common to use values of 0.95 and 0.99, meaning 95% and 99% of the variance of the original features has been retained.
-- whiten =True transforms the values of each principal component so that they have zero mean and unit variance. Whitening will remove some information from the transformed signal but can sometimes improve the predictive accuracy of the downstream estimators.
-- svd_solver=" randomized", which implements a stochastic algorithm to find the first principal components in often significantly less time. 
+- Le parametre n_components a deux opérations, selon l'argument fourni. Si l'argument est supérieur à 1, n_components renverra autant de fonctionnalités. Si l'argument de n_components est compris entre 0 et 1, PCA renvoie le nombre minimum d'entités qui conservent autant de variance. Il est courant d'utiliser des valeurs de 0,95 et 0,99, ce qui signifie que 95 % et 99 % de la variance des caractéristiques d'origine ont été conservées.
+- whiten =True transforme les valeurs de chaque composante principale afin qu'elles aient une moyenne nulle et une variance unitaire. Le blanchiment supprimera certaines informations du signal transformé mais peut parfois améliorer la précision prédictive des estimateurs en aval.
+- svd_solver=" randomized", qui implémente un algorithme stochastique pour trouver les premières composantes principales en souvent beaucoup moins de temps.
 
-- Reference:
+- Référence:
   - [**Machine Learning From Scratch**](https://dafriedman97.github.io/mlbook/content/introduction.html)
   - [**Scikit-learn Implementation**](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) 
