@@ -25,7 +25,7 @@
   - [**ML from Scratch on Youtube**](https://lnkd.in/gNPM6vW2) 
 
 
-**💡 Algorithme 1 : Principal Component Analysis using scikit-learn**: 
+**💡 Algorithme 2 : Principal Component Analysis using scikit-learn**: 
 - PCA projects observations onto the (hopefully fewer) principal components of the feature matrix that retain the most variance. PCA can also be used in the scenario, where we need features to be retained that share maximum variance. PCA is implemented in scikit-learn using the PCA method:
 
       class sklearn.decomposition.PCA(n_components=None, *, copy=True, whiten=False, svd_solver='auto', tol=0.0, iterated_power='auto', random_state=None)
