@@ -66,4 +66,4 @@
     
 - Reference:
   - [**Machine Learning with Python Cookbook**](https://www.amazon.in/Machine-Learning-Python-Cookbook-Preprocessing/dp/9352137302/ref=sr_1_1?crid=3SWKWJG6II2GK&keywords=machine+learning+with+python+cookbook&qid=1636010115&sprefix=Machine+Learning+with+Python+%2Caps%2C273&sr=8-1)
-  - [**ML from Scratch on Youtube**](https://lnkd.in/gNPM6vW2)
+
